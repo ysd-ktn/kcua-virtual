@@ -1,5 +1,5 @@
 # kcua-virtual
-https://kyogei-virtual.netlify.app/
+https://kcua-virtual.netlify.app/
 
 ## Usage
 
