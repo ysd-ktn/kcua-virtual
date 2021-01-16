@@ -103,6 +103,38 @@ body {
   h5 {
     font-size: 2.0rem; } }
 
+/* -------------------- navbar -------------------- */
+.navbar {
+  position: fixed;
+  width: 100%; }
+  .navbar .navbar-nav .nav-item {
+    font-size: 18px;
+    margin-left: 30px; }
+  @media screen and (min-width: 895px) {
+    .navbar {
+      height: 60px; }
+      .navbar .navbar-nav .nav-item {
+        margin-left: 60px; } }
+
+.sns-icon {
+  position: fixed;
+  display: flex;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 50px;
+  flex-direction: column;
+  float: right; }
+  @media screen and (max-width: 560px) {
+    .sns-icon {
+      margin-right: 12px; } }
+  .sns-icon img {
+    max-width: 70px;
+    margin-top: 35px; }
+    @media screen and (max-width: 560px) {
+      .sns-icon img {
+        margin-top: 30px;
+        width: 40px; } }
+
 /* -------------------- Bootstrap Variables -------------------- */
 /* -------------------- Entry -------------------- */
 .entry-section {

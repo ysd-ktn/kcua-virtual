@@ -1,29 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-md navbar-light" style= background-color:rgba(255,255,255,0.8);>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">トップ</a>
+      <a class="nav-item nav-link" href="#">京芸V展について</a>
+      <a class="nav-item nav-link" href="#">展覧会</a>
+      <a class="nav-item nav-link" href="#">イベント</a>
+      <a class="nav-item nav-link" href="#">ニュース</a>
+      <a class="nav-item nav-link" href="mailto:kcua.virtual@gmail.com">お問合せ</a>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<div class="sns-icon">
+  <a href=""><img src="{{ url_for('static', filename='images/cluster_icon.png') }}"></a>
+  <a href="https://twitter.com/kcua_virtual"><img src="{{ url_for('static', filename='images/twitter_icon.png') }}"></a>
+  <a href="https://note.com/kcua_virtual"><img src="{{ url_for('static', filename='images/note_icon.png') }}"></a>
+</div>

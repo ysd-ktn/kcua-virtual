@@ -125,6 +125,49 @@ h5 {
     }
 }
 
+
+/* -------------------- navbar -------------------- */
+$threshold-width: 560px;
+.navbar {
+    position: fixed;
+    width: 100%;
+    .navbar-nav{
+        .nav-item{
+            font-size: 18px;
+            margin-left: 30px;
+        }
+    }
+    @media screen and (min-width: 895px) {
+        height: 60px;
+        .navbar-nav {
+            .nav-item {
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+.sns-icon {
+    position: fixed;
+    display: flex;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 50px;
+    flex-direction: column;
+    float: right;
+    @media screen and (max-width: $threshold-width) {
+        margin-right: 12px;
+    }
+
+    img{
+        max-width: 70px;
+        margin-top: 35px;
+        @media screen and (max-width: $threshold-width) {
+            margin-top: 30px;
+            width: 40px;
+        }
+    }
+}
 /* -------------------- Bootstrap Variables -------------------- */
 $sm: 576px;
 $md: 768px;
