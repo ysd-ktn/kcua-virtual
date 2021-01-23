@@ -249,4 +249,41 @@ body {
         margin-bottom: 30px;
         width: 80%; } }
 
+/* -------------------- about -------------------- */
+.about-section {
+  width: 100%;
+  background-image: url("/static/images/about-background.png");
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .about-section h1 {
+    width: 80%;
+    margin: auto;
+    color: #1D95FB;
+    font-size: 90px;
+    opacity: 0.6;
+    font-weight: 900; }
+  .about-section .base-square {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(29, 149, 251, 0.6);
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .about-section .base-square .about-contents {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center; }
+      .about-section .base-square .about-contents .about-img {
+        width: 30%; }
+      .about-section .base-square .about-contents p {
+        width: 51%;
+        color: #ffffff;
+        font-size: large;
+        margin-left: 60px;
+        font-size: 20px;
+        line-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
 /*# sourceMappingURL=main.css.map */
