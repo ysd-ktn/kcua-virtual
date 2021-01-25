@@ -324,18 +324,25 @@ $go-venue-pc-width: 300px;
     h1 {
         width: 80%;
         margin: auto;
-        color: #1D95FB;
+        color: rgba(29, 149, 251, 0.5);
         font-size: 90px;
-        opacity: 0.6;
         font-weight: 900;
+
+        @media screen and (min-width: 0px) and (max-width: 1244px) {
+            font-size: 50px;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 481px) {
+            font-size: 30px;
+        }
     }
 
     .base-square {
         margin: auto;
         width: 80%;
-        background-color: rgba(29, 149, 251, 0.6);
-        padding-top: 60px;
-        padding-bottom: 60px;
+        background-color: rgba(29, 149, 251, 0.5);
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         .about-contents {
             display: flex;
@@ -343,20 +350,59 @@ $go-venue-pc-width: 300px;
             margin-right: auto;
             justify-content: center;
 
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+                display: inline-block;
+                text-align: center;
+            }
+
             .about-img {
                 width: 30%;
+
+                @media screen and (min-width: 0px) and (max-width: 767px) {
+                    width: 60%;
+                }
             }
     
             p {
                 width: 51%;
                 color: #ffffff;
-                font-size: large;
                 margin-left: 60px;
                 font-size: 20px;
                 line-height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media screen and (min-width: 1201px) and (max-width: 1650px) {
+                    font-size: 16px;
+                    line-height: 35px;
+
+                }
+
+                @media screen and (min-width: 973px) and (max-width: 1200px) {
+                    font-size: 14px;
+                    line-height: 35px;
+
+                }
+                
+                @media screen and (min-width: 768px) and (max-width: 972px) {
+                    font-size: 13px;
+                    line-height: 25px;
+                    margin-left: 30px;
+                    width: 55%;
+
+                }
+                
+                @media screen and (min-width: 0px) and (max-width: 767px) {
+                    width: 85%;
+                    font-size: 13px;
+                    line-height: 25px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 40px;
+                    text-align: left;
+
+                }
             }
         }
     }
