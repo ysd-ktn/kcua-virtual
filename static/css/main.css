@@ -320,4 +320,35 @@ body {
             margin-top: 40px;
             text-align: left; } }
 
+/* -------------------- about -------------------- */
+.news-section {
+  width: 100%;
+  background-image: url("/static/images/news_background.png");
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .news-section h1 {
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    color: rgba(255, 233, 49, 0.5);
+    font-size: 90px;
+    font-weight: 900; }
+    @media screen and (min-width: 0px) and (max-width: 1244px) {
+      .news-section h1 {
+        font-size: 50px; } }
+    @media screen and (min-width: 0px) and (max-width: 481px) {
+      .news-section h1 {
+        font-size: 30px; } }
+  .news-section .base-square {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(255, 233, 49, 0.5);
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .news-section .base-square .about-contents {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center; }
+
 /*# sourceMappingURL=main.css.map */
