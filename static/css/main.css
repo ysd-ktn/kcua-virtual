@@ -330,7 +330,7 @@ body {
     text-align: right;
     width: 80%;
     margin: auto;
-    color: rgba(255, 233, 49, 0.5);
+    color: rgba(255, 233, 49, 0.6);
     font-size: 90px;
     font-weight: 900; }
     @media screen and (min-width: 0px) and (max-width: 1244px) {
@@ -350,5 +350,14 @@ body {
       margin-left: auto;
       margin-right: auto;
       justify-content: center; }
+      @media screen and (min-width: 551px) and (max-width: 880px) {
+        .news-section .base-square .about-contents .twitter-timeline {
+          margin-left: 40px;
+          margin-right: 40px; } }
+      @media screen and (min-width: 0px) and (max-width: 550px) {
+        .news-section .base-square .about-contents .twitter-timeline {
+          height: 400px !important;
+          margin-left: 20px;
+          margin-right: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
