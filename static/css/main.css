@@ -249,4 +249,75 @@ body {
         margin-bottom: 30px;
         width: 80%; } }
 
+/* -------------------- about -------------------- */
+.about-section {
+  width: 100%;
+  background-image: url("/static/images/about-background.png");
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .about-section h1 {
+    width: 80%;
+    margin: auto;
+    color: rgba(29, 149, 251, 0.5);
+    font-size: 90px;
+    font-weight: 900; }
+    @media screen and (min-width: 0px) and (max-width: 1244px) {
+      .about-section h1 {
+        font-size: 50px; } }
+    @media screen and (min-width: 0px) and (max-width: 481px) {
+      .about-section h1 {
+        font-size: 30px; } }
+  .about-section .base-square {
+    margin: auto;
+    width: 80%;
+    background-color: rgba(29, 149, 251, 0.5);
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .about-section .base-square .about-contents {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        .about-section .base-square .about-contents {
+          display: inline-block;
+          text-align: center; } }
+      .about-section .base-square .about-contents .about-img {
+        width: 30%; }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          .about-section .base-square .about-contents .about-img {
+            width: 60%; } }
+      .about-section .base-square .about-contents p {
+        width: 51%;
+        color: #ffffff;
+        margin-left: 60px;
+        font-size: 20px;
+        line-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media screen and (min-width: 1201px) and (max-width: 1650px) {
+          .about-section .base-square .about-contents p {
+            font-size: 16px;
+            line-height: 35px; } }
+        @media screen and (min-width: 973px) and (max-width: 1200px) {
+          .about-section .base-square .about-contents p {
+            font-size: 14px;
+            line-height: 35px; } }
+        @media screen and (min-width: 768px) and (max-width: 972px) {
+          .about-section .base-square .about-contents p {
+            font-size: 13px;
+            line-height: 25px;
+            margin-left: 30px;
+            width: 55%; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          .about-section .base-square .about-contents p {
+            width: 85%;
+            font-size: 13px;
+            line-height: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 40px;
+            text-align: left; } }
+
 /*# sourceMappingURL=main.css.map */
