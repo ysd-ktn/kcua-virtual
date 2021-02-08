@@ -461,10 +461,6 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 60px;
-        padding-right: 60px;
         text-align: center; }
         .contents-section .base-square .contents-contents .modal-wrapper:not(:target) {
           opacity: 0;
@@ -480,13 +476,141 @@ body {
           margin-left: -.05em;
           vertical-align: middle;
           content: ""; }
-        .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content {
-          display: flex;
-          background-image: url("/static/images/modal-background.png"); }
-          .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content img {
-            width: 500px;
-            height: 650px;
-            object-fit: cover; }
+        .contents-section .base-square .contents-contents .modal-wrapper .modal-window {
+          z-index: 20;
+          width: 80%;
+          margin: auto;
+          position: relative; }
+          .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-close {
+            z-index: 20;
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+            padding-right: 20px;
+            font-size: 80px;
+            text-decoration: none;
+            color: #000000; }
+            .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-close:hover {
+              color: #707070; }
+          .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content {
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            background-image: url("/static/images/modal-background.png"); }
+            .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content img {
+              width: 500px;
+              height: 650px;
+              object-fit: cover; }
+            .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description {
+              width: 50%;
+              margin-left: 60px;
+              margin-top: auto;
+              margin-bottom: auto; }
+              .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description h1 {
+                width: 100%;
+                margin: 0;
+                text-align: left;
+                color: #ffffff; }
+              .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description p {
+                margin-top: 40px;
+                width: 80%;
+                text-align: left;
+                color: #ffffff;
+                line-height: 40px; }
+              .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link {
+                margin-top: 60px;
+                display: flex; }
+                .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button {
+                  width: 50%; }
+                  .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button p {
+                    margin-top: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 10px; }
+                  .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-1 {
+                    border: solid;
+                    border-color: #FF0022;
+                    width: 300px;
+                    height: 70px;
+                    overflow: hidden; }
+                    @media screen and (min-width: 1100px) {
+                      .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-1 a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #ffffff;
+                        font-size: 20px;
+                        line-height: 60px;
+                        border: solid;
+                        border-width: thin;
+                        border-color: #ff0022;
+                        position: relative;
+                        z-index: 2; }
+                        .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-1 a:before {
+                          content: '';
+                          position: absolute;
+                          top: 0;
+                          left: -100%;
+                          width: 100%;
+                          height: 100%;
+                          z-index: -1;
+                          background-color: #ff0022;
+                          transition: all 200ms linear; }
+                        .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-1 a:hover {
+                          color: #000000; }
+                          .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-1 a:hover:before {
+                            left: 0; } }
+                  .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-2 {
+                    border: solid;
+                    border-color: #DDC925;
+                    width: 300px;
+                    height: 70px;
+                    overflow: hidden; }
+                    @media screen and (min-width: 1100px) {
+                      .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-2 a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #ffffff;
+                        font-size: 20px;
+                        line-height: 60px;
+                        border: solid;
+                        border-width: thin;
+                        border-color: #DDC925;
+                        position: relative;
+                        z-index: 2; }
+                        .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-2 a:before {
+                          content: '';
+                          position: absolute;
+                          top: 0;
+                          left: -100%;
+                          width: 100%;
+                          height: 100%;
+                          z-index: -1;
+                          background-color: #DDC925;
+                          transition: all 200ms linear; }
+                        .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-2 a:hover {
+                          color: #000000; }
+                          .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content .description .modal-link .individual-button .modal-button-2 a:hover:before {
+                            left: 0; } }
+        .contents-section .base-square .contents-contents .modal-wrapper .modal-overlay {
+          z-index: 10;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          backdrop-filter: blur(8px); }
 
 /* -------------------- event -------------------- */
 .event-section {
