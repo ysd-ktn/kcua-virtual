@@ -258,7 +258,7 @@ body {
   .about-section h1 {
     width: 80%;
     margin: auto;
-    color: rgba(29, 149, 251, 0.5);
+    color: rgba(29, 149, 251, 0.7);
     font-size: 90px;
     font-weight: 900; }
     @media screen and (min-width: 0px) and (max-width: 1244px) {
@@ -270,7 +270,7 @@ body {
   .about-section .base-square {
     margin: auto;
     width: 80%;
-    background-color: rgba(29, 149, 251, 0.5);
+    background-color: rgba(29, 149, 251, 0.7);
     padding-top: 40px;
     padding-bottom: 40px; }
     .about-section .base-square .about-contents {
@@ -330,7 +330,7 @@ body {
     text-align: right;
     width: 80%;
     margin: auto;
-    color: rgba(255, 233, 49, 0.6);
+    color: rgba(255, 233, 49, 0.7);
     font-size: 90px;
     font-weight: 900; }
     @media screen and (min-width: 0px) and (max-width: 1244px) {
@@ -342,7 +342,7 @@ body {
   .news-section .base-square {
     margin: auto;
     width: 80%;
-    background-color: rgba(255, 233, 49, 0.5);
+    background-color: rgba(255, 233, 49, 0.7);
     padding-top: 40px;
     padding-bottom: 40px; }
     .news-section .base-square .news-contents {
@@ -992,7 +992,7 @@ body {
   .event-section h1 {
     width: 80%;
     margin: auto;
-    color: rgba(255, 0, 34, 0.6);
+    color: rgba(255, 0, 34, 0.7);
     font-size: 90px;
     font-weight: 900; }
     @media screen and (min-width: 0px) and (max-width: 1244px) {
@@ -1004,7 +1004,7 @@ body {
   .event-section .base-square {
     margin: auto;
     width: 80%;
-    background-color: rgba(255, 0, 34, 0.5);
+    background-color: rgba(255, 0, 34, 0.7);
     padding-top: 60px;
     padding-bottom: 60px; }
     @media screen and (min-width: 0px) and (max-width: 1079px) {
