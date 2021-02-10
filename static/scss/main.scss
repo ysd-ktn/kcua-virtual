@@ -462,6 +462,755 @@ $go-venue-pc-width: 300px;
     }
 }
 
+/* -------------------- contents -------------------- */
+.contents-section {
+    width: 100%;
+    background-image: url("/static/images/contents-background.png");
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h1 {
+        text-align: right;
+        width: 80%;
+        margin: auto;
+        color: rgba(255, 0, 34, 0.7);
+        font-size: 90px;
+        font-weight: 900;
+
+        @media screen and (min-width: 0px) and (max-width: 1244px) {
+            font-size: 50px;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 481px) {
+            font-size: 30px;
+        }
+    }
+
+    .base-square {
+        margin: auto;
+        width: 80%;
+        background-color: rgba(255, 0, 34, 0.7);
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media screen and (min-width: 0px) and (max-width: 1079px) {
+            padding-top: 40px;
+            padding-bottom:40px;
+        }
+
+
+        .contents-contents {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+        
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+                flex-direction: column-reverse;
+            }    
+
+            .contents-text-bottun {
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 40%;
+                @media screen and (min-width: 0px) and (max-width: 767px) {
+                    width: 90%;
+                    margin: auto;
+                }  
+                p {
+                    font-size: 20px;
+                    line-height: 40px;
+                    width: 85%;
+                    margin-left: auto;
+                    margin-bottom: 40px;
+                    color: #ffffff;
+
+                    @media screen and (min-width: 0px) and (max-width: 767px) {
+                        margin-right: auto;
+                        margin-left: auto;
+                        margin-bottom: 30px;
+                        width: 92%;
+                        font-size: 14px;
+                        line-height: 30px;
+                    }  
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        margin-bottom: 0px;
+                        width: 90%;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                        margin-bottom: 0px;
+                        width: 93%;
+                        font-size: 16px;
+                        line-height: 35px; 
+                    }
+                }
+                .contents-bottun {
+                    margin-top: 30px;
+                    border: solid;
+                    border-color: #3c3c3e;
+                    width: 300px;
+                    height: 70px;
+                    margin-left: auto;
+                    overflow: hidden;
+
+                    @media screen and (min-width: 0px) and (max-width: 767px) {
+                        margin: auto;
+                        border: none;
+                        width: 75%;
+                        height: 60px;
+                        background-color: #3c3c3c;
+                        margin-top: 10px;
+
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
+                            font-weight: bold;
+                            text-align: center;
+                            line-height: 60px;
+                            font-size: 15px;
+                            color: #ffffff;
+                        }
+                    }  
+
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        width: 90%;
+                        font-size: 16px;
+                        height: 50px;
+                        margin-top: 15px;
+                        background-color: #3c3c3e;
+
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
+                            font-weight: bold;
+                            text-align: center;
+                            line-height: 45px;
+                            font-size: 15px;
+                            color: #ffffff;
+                        }
+                    }
+
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                        width: 90%;
+                        height: 60px;
+                        margin-left: 25px;
+                        margin-top: 20px;
+
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
+                            font-weight: bold;
+                            text-align: center;
+                            line-height: 50px;
+                            font-size: 16px;
+                            color: #3c3c3e;
+                            border: solid;
+                            border-width: thin;
+                            border-color: #3c3c3e;
+                            position: relative;
+                            z-index: 2;
+
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -100%;
+                                width: 100%;
+                                height: 100%;
+                                z-index: -1;
+                                background-color: #3c3c3e;
+                                transition: all 200ms linear;
+                            }
+    
+                            &:hover {
+                                color: #ffffff;
+    
+                                &:before {
+                                    left: 0;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    @media screen and (min-width: 1440px) {
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            text-decoration: none;
+                            font-weight: bold;
+                            color: #3c3c3e;
+                            font-size: 20px;
+                            line-height: 60px;
+                            border: solid;
+                            border-width: thin;
+                            border-color: #3c3c3e;
+                            position: relative;
+                            z-index: 2;
+
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -100%;
+                                width: 100%;
+                                height: 100%;
+                                z-index: -1;
+                                background-color: #3c3c3e;
+                                transition: all 200ms linear;
+                            }
+    
+                            &:hover {
+                                color: #ffffff;
+    
+                                &:before {
+                                    left: 0;
+                                }
+                            }
+
+    
+                        }
+
+                    }
+                }
+            }
+
+            .thmbnail-button {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 60%;
+                @media screen and (min-width: 0px) and (max-width: 767px) {
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                }   
+                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                    width: 70%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                } 
+                @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                    width: 80%;
+                    margin-right: 10px;
+                    margin-right: 10px;
+                } 
+                .upper-row {
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                    display: flex;
+                    @media screen and (min-width: 0px) and (max-width: 767px) {
+                        margin-right: 8px;
+                        margin-bottom: 10px;
+                    } 
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    } 
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    } 
+                    a {
+                        background-color: #000000;
+                        margin-left: 20px;
+                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                            margin-left: 8px;
+                        }   
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            margin-left: 10px;
+                        }
+                        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                            margin-left: 10px;
+                        } 
+                        
+                        img {
+                            width: 100%;
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+                .lower-row {
+                    display: flex;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                    @media screen and (min-width: 0px) and (max-width: 767px) {
+                        margin-right: 8px;
+                        margin-bottom: 10px;
+                    } 
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    } 
+                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    } 
+                    a {
+                        background-color: #000000;
+                        margin-left: 20px;
+                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                            margin-left: 8px;
+                        } 
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            margin-left: 10px;
+                        }
+                        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                            margin-left: 10px;
+                        } 
+
+                        img {
+                            width: 100%;
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-wrapper {
+                z-index: 999;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+
+                &:not(:target) {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity .3s, visibility .3s;
+                }
+                
+                &:target {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: opacity .4s, visibility .4s;    
+                }
+
+                &::after {
+                    display: inline-block;
+                    height: 100%;
+                    margin-left: -.05em;
+                    vertical-align: middle;
+                    content: ""
+                }
+
+                .modal-window {
+                    z-index: 20;
+                    width: 90%;
+                    margin: auto;
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    @media screen and (min-width: 1025px) {
+                        width: 80%;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        width: 95%;
+                    }
+
+                    .modal-close {
+                        z-index: 20;
+                        display: inline-block;
+                        width: 100%;
+                        text-align: right;
+                        padding-right: 20px;
+                        font-size: 80px;
+                        text-decoration: none;
+                        color: #000000;
+
+                        &:hover {
+                            color: #707070;
+                        }
+
+                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                            padding-right: 10px;
+                            font-size: 40px;
+                        }
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            padding-right: 10px;
+                            font-size: 70px; 
+                        } 
+
+                    }
+
+                    .modal-content {
+                        width: 100%;
+                        max-height: 80vh;
+                        overflow-y: auto;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        margin-bottom: 100px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        background-image: url("/static/images/modal-background.png");
+                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                            display: inline-block;
+                            padding: 0;
+                            height: 80vh;
+                        } 
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            height: 50vh;
+                            padding: 20px;
+                        }
+
+                        img {
+                            width: 100%;
+                            @media screen and (min-width: 0px) and (max-width: 767px) {
+                                margin-top: 20px;
+                            }
+                            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                width: 250px;
+                                height: 400px;
+                                object-fit: cover;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                            } 
+                            @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                width: 350px;
+                                height: 500px;
+                                object-fit: cover;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                            }
+                            @media screen and (min-width: 1440px) {
+                                width: 500px;
+                                height: 650px;
+                                object-fit: cover;
+                                margin-bottom: auto;
+                            }
+                        }
+
+                        .description {
+                            width: 50%;
+                            margin-left: 80px;
+                            margin-top: auto;
+                            margin-bottom: auto;
+                            @media screen and (min-width: 0px) and (max-width: 767px) {
+                                width: 90%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                            } 
+                            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    margin-left: 30px;
+                                    width: 60%;
+                            } 
+                            @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                margin-left: 30px;
+                                width: 60%;
+                            }
+                            h1 {
+                                width: 100%;
+                                margin: 0;
+                                text-align: left;
+                                color: #ffffff;
+                                @media screen and (min-width: 0px) and (max-width: 767px) {
+                                    text-align: center;
+                                    font-size: 28px;
+                                }
+                                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    font-size: 40px;
+                                }
+                            }
+                            p {
+                                margin-top: 20px;
+                                width: 90%;
+                                text-align: left;
+                                color: #ffffff;
+                                line-height: 40px;
+                                @media screen and (min-width: 0px) and (max-width: 767px) {
+                                    margin-top: 20px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                }
+                                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    margin-top: 10px;
+                                    width: 100%;
+                                    line-height: 30px;
+                                } 
+                                @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                }
+                            }
+
+                            .modal-link {
+                                margin-top: 40px;
+                                display: flex;
+                                @media screen and (min-width: 0px) and (max-width: 767px) {
+                                    margin-top: 20px;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-top: 10px;
+                                }
+                                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    margin-top: 20px;
+                                }
+                                @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                    margin-top: 20px;
+                                }
+
+                                .individual-button {
+                                    width: 50%;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    @media screen and (min-width: 0px) and (max-width: 767px) {
+                                        width: 100%;
+                                        margin-bottom: 10px;
+                                    }
+                                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                    }
+                                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                        width: 100%;
+                                        padding-left: 0px;
+                                    }
+                                    p {
+                                        margin-top: 0;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        margin-bottom: 10px;
+                                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                                            width: 90%;
+                                            text-align: left;
+                                            font-size: 12px;
+                                            margin-right: auto;
+                                            margin-left: auto;
+                                            margin-bottom: 5px;
+                                        }
+                                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                            font-size: 15px;
+                                        }
+                                        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                    .modal-button-1 {
+                                        border: solid;
+                                        border-color: #FF0022;
+                                        width: 100%;
+                                        height: 70px;
+                                        overflow: hidden;
+                                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                                            border: none;
+                                            width: 90%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 50px;
+                                            background-color: #ff0022;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 14px;
+                                                line-height: 50px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                            border: none;
+                                            width: 100%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 60px;
+                                            background-color: #ff0022;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 18px;
+                                                line-height: 60px;
+                                            }
+                                        }
+
+                                       
+                                        @media screen and (min-width: 1024px) {
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 20px;
+                                                line-height: 60px;
+                                                border: solid;
+                                                border-width: thin;
+                                                border-color: #ff0022;
+                                                position: relative;
+                                                z-index: 2;
+
+                                                &:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: -100%;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: -1;
+                                                    background-color: #ff0022;
+                                                    transition: all 200ms linear;
+                                                }
+    
+                                                &:hover {
+                                                    color: #000000;
+    
+                                                    &:before {
+                                                        left: 0;
+                                                    }
+                                                }
+
+    
+                                            }
+
+                                        } 
+                                    }
+
+                                    .modal-button-2 {
+                                        border: solid;
+                                        border-color: #DDC925;
+                                        width: 100%;
+                                        height: 70px;
+                                        overflow: hidden;
+                                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                                            border: none;
+                                            width: 90%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 50px;
+                                            background-color: #DDC925;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 14px;
+                                                line-height: 50px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                            border: none;
+                                            width: 100%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 60px;
+                                            background-color: #DDC925;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 18px;
+                                                line-height: 60px;
+                                            }
+                                        }
+
+                                       
+                                        @media screen and (min-width: 1024px) {
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 20px;
+                                                line-height: 60px;
+                                                border: solid;
+                                                border-width: thin;
+                                                border-color: #DDC925;
+                                                position: relative;
+                                                z-index: 2;
+
+                                                &:before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: -100%;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: -1;
+                                                    background-color: #DDC925;
+                                                    transition: all 200ms linear;
+                                                }
+    
+                                                &:hover {
+                                                    color: #000000;
+    
+                                                    &:before {
+                                                        left: 0;
+                                                    }
+                                                }
+
+    
+                                            }
+
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .modal-overlay {
+                    z-index: 10;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    backdrop-filter: blur(8px);
+                }
+            }
+        }
+
+    }
+}
+
 /* -------------------- event -------------------- */
 .event-section {
     width: 100%;

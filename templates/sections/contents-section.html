@@ -1,0 +1,142 @@
+<div class="contents-section">
+    <h1>展覧会一覧</h1>
+    <div class="base-square">
+        <div class="contents-contents">
+            <div class="contents-text-bottun">
+                <p>『Kou展』、『Unseen Sights』、『#共創展』の3つの展覧会を開催！<br>2020年12月より好評運営中の『Vギャラ』も合わせて公開中です。<br>それぞれ違ったコンセプトを持った展覧会を、ぜひお楽しみください。<br>clusterをインストールして展覧会へ遊びに行きましょう！</p>
+                <div class="contents-bottun">
+                    <a href="#">clusterの使い方  ></a>
+                </div>
+                <div class="contents-bottun">
+                    <a href="#">展覧会全体MAP  ></a>
+                </div>
+            </div>
+            <!----- thmbnail ----->
+            <div class="thmbnail-button">
+                <div class="upper-row">
+                    <a href="#modal-Kou"><img src="{{ url_for('static', filename='images/thumbnail-tile-Kou.jpg')}} "></a>
+                    <a href="#modal-Unseensight"><img src="{{ url_for('static', filename='images/thumbnail-tile-Unseensights.jpg')}} "></a>
+                </div>
+                <div class="lower-row">
+                    <a href="#modal-kyousouten"><img src="{{ url_for('static', filename='images/thumbnail-tile-kyousouten.jpg')}} "></a>
+                    <a href="#modal-Vgarally"><img src="{{ url_for('static', filename='images/thumbnail-tile-Vgarally.jpg')}} "></a>
+                </div>
+            </div>
+
+            <!---------- modal-window ---------->
+            <!-----  Kou展 ----->
+            <div class="modal-wrapper" id="modal-Kou">
+                <a href="#!" class="modal-overlay"></a>
+                <div class="modal-window">
+                    <a href="#!" class="modal-close">×</a>
+                    <div class="modal-content">
+                        <img src="{{ url_for('static', filename='images/thumbnail-Kou.png')}} ">
+                        <div class="description">
+                            <h1>Kou展</h1>
+                            <p>抗い難い大きなものに対する畏怖と調和。<br>独特のタッチで描かれるイラストレーター・Kouによる作品を展示しています。<br>作家特有の世界観はバーチャル空間ではどのように表現されるのか、素晴らしい作品と共にぜひ注目してみてください。<br>"If you meet with..."<br>"それ"と出会ったとき、あなたは何を感じるでしょうか。</p>
+                            <div class="modal-link">
+                                <div class="individual-button">
+                                    <p>展覧会へはこちらから</p>
+                                    <div class="modal-button-1">
+                                        <a href="#">会場へ向かう  ></a>
+                                    </div> 
+                                </div>
+                                <div class="individual-button">
+                                    <p>もっと知りたい人は</p>
+                                    <div class="modal-button-2">
+                                        <a href="#">詳細を見る  ></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----  Unseen Sights ----->
+            <div class="modal-wrapper" id="modal-Unseensight">
+                <a href="#!" class="modal-overlay"></a>
+                <div class="modal-window">
+                    <a href="#!" class="modal-close">×</a>
+                    <div class="modal-content">
+                        <img src="{{ url_for('static', filename='images/thumbnail-Unseensights.png')}} ">
+                        <div class="description">
+                            <h1>Unseen Sights</h1>
+                            <p>ありとあらゆる可能性。<br>ここに展示されるのは京都市立芸術大学を今年度卒業する学生による作品たちです。それらはまずリアルの卒展で展示されてから、次にバーチャル空間に再び展示として現れます。<br>これから可能性の道に足を踏み出す学生の作品とともに、光のその先を覗きに行きませんか？<br>{ 作家：進士三紗、土屋咲瑛、山田実奈（敬称略）｝</p>
+                            <div class="modal-link">
+                                <div class="individual-button">
+                                    <p>展覧会へはこちらから</p>
+                                    <div class="modal-button-1">
+                                        <a href="#">会場へ向かう  ></a>
+                                    </div> 
+                                </div>
+                                <div class="individual-button">
+                                    <p>もっと知りたい人は</p>
+                                    <div class="modal-button-2">
+                                        <a href="#">詳細を見る  ></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----  #共創展 ----->
+            <div class="modal-wrapper" id="modal-kyousouten">
+                <a href="#!" class="modal-overlay"></a>
+                <div class="modal-window">
+                    <a href="#!" class="modal-close">×</a>
+                    <div class="modal-content">
+                        <img src="{{ url_for('static', filename='images/thumbnail-Unseensight.jpg')}} ">
+                        <div class="description">
+                            <h1>#共創展</h1>
+                            <p>道中での偶然の出会いと、そこで構築されるもの。それにはどれほどの可能性が秘められているだろう。<br>「cluster×Twitter」で、みんなとつくる展覧会『#共創展』。<br>１．cluster会場内の作品を自由に並び変えて写真を撮り、Twitterに投稿。<br>２．投稿された写真に自由にタイトルをつけて作品を完成させよう。<br>３．たくさんの評価を得た作品はイベントで表彰されるのでお楽しみに！</p>
+                            <div class="modal-link">
+                                <div class="individual-button">
+                                    <p>展覧会へはこちらから</p>
+                                    <div class="modal-button-1">
+                                        <a href="#">会場へ向かう  ></a>
+                                    </div> 
+                                </div>
+                                <div class="individual-button">
+                                    <p>もっと知りたい人は</p>
+                                    <div class="modal-button-2">
+                                        <a href="#">詳細を見る  ></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----  #Vギャラ ----->
+            <div class="modal-wrapper" id="modal-Vgarally">
+                <a href="#!" class="modal-overlay"></a>
+                <div class="modal-window">
+                    <a href="#!" class="modal-close">×</a>
+                    <div class="modal-content">
+                        <img src="{{ url_for('static', filename='images/thumbnail-Unseensight.jpg')}} ">
+                        <div class="description">
+                            <h1>Vギャラ</h1>
+                            <p>道中での偶然の出会いと、そこで構築されるもの。それにはどれほどの可能性が秘められているだろう。<br>「cluster×Twitter」で、みんなとつくる展覧会『#共創展』。<br>１．cluster会場内の作品を自由に並び変えて写真を撮り、Twitterに投稿。<br>２．投稿された写真に自由にタイトルをつけて作品を完成させよう。<br>３．たくさんの評価を得た作品はイベントで表彰されるのでお楽しみに！</p>
+                            <div class="modal-link">
+                                <div class="individual-button">
+                                    <p>展覧会へはこちらから</p>
+                                    <div class="modal-button-1">
+                                        <a href="#">会場へ向かう  ></a>
+                                    </div> 
+                                </div>
+                                <div class="individual-button">
+                                    <p>もっと知りたい人は</p>
+                                    <div class="modal-button-2">
+                                        <a href="#">詳細を見る  ></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
