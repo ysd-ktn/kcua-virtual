@@ -1316,7 +1316,6 @@ $go-venue-pc-width: 300px;
                         height: 85px;
                         overflow: hidden;
                         margin: auto;
-                        border-color: #3c3c3e;
                         @media screen and (min-width: 1100px) {
                             a {
                                 display: block;
@@ -1328,6 +1327,7 @@ $go-venue-pc-width: 300px;
                                 font-size: 32px;
                                 line-height: 80px;
                                 border: solid;
+                                border-width: 5px;
                                 border-color: #3c3c3e;
                                 position: relative;
                                 z-index: 2;
