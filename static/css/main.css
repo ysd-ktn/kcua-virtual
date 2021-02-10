@@ -1031,7 +1031,10 @@ body {
           margin-bottom: 40px;
           font-size: 24px; } }
     .event-section .base-square .event-contents .summary {
-      display: flex; }
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto; }
       @media screen and (min-width: 0px) and (max-width: 767px) {
         .event-section .base-square .event-contents .summary {
           display: block; } }
@@ -1044,6 +1047,10 @@ body {
         background-color: rgba(255, 255, 255, 0.3);
         color: #ffffff;
         text-align: center; }
+        @media screen and (min-width: 768px) {
+          .event-section .base-square .event-contents .summary .contents-block {
+            margin-right: 10px;
+            margin-left: 10px; } }
         @media screen and (min-width: 1100px) and (max-width: 1500px) {
           .event-section .base-square .event-contents .summary .contents-block {
             width: 45%; } }
