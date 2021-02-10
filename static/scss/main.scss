@@ -725,6 +725,7 @@ $go-venue-pc-width: 300px;
                         margin-bottom: 10px;
                     } 
                     a {
+                        background-color: #000000;
                         margin-left: 20px;
                         @media screen and (min-width: 0px) and (max-width: 767px) {
                             margin-left: 8px;
@@ -738,6 +739,9 @@ $go-venue-pc-width: 300px;
                         
                         img {
                             width: 100%;
+                            &:hover {
+                                opacity: 0.7;
+                            }
                         }
                     }
                 }
@@ -758,6 +762,7 @@ $go-venue-pc-width: 300px;
                         margin-bottom: 10px;
                     } 
                     a {
+                        background-color: #000000;
                         margin-left: 20px;
                         @media screen and (min-width: 0px) and (max-width: 767px) {
                             margin-left: 8px;
@@ -771,6 +776,9 @@ $go-venue-pc-width: 300px;
 
                         img {
                             width: 100%;
+                            &:hover {
+                                opacity: 0.7;
+                            }
                         }
                     }
                 }
@@ -807,9 +815,17 @@ $go-venue-pc-width: 300px;
 
                 .modal-window {
                     z-index: 20;
-                    width: 80%;
+                    width: 90%;
                     margin: auto;
                     position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    @media screen and (min-width: 1025px) {
+                        width: 80%;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                        width: 95%;
+                    }
 
                     .modal-close {
                         z-index: 20;
@@ -825,23 +841,65 @@ $go-venue-pc-width: 300px;
                             color: #707070;
                         }
 
+                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                            padding-right: 10px;
+                            font-size: 40px;
+                        }
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            padding-right: 10px;
+                            font-size: 70px; 
+                        } 
+
                     }
 
                     .modal-content {
+                        width: 100%;
                         max-height: 80vh;
                         overflow-y: auto;
-                        padding-left: 60px;
-                        padding-top: 60px;
-                        padding-bottom: 60px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        margin-bottom: 100px;
                         display: flex;
                         justify-content: center;
                         flex-direction: row;
                         background-image: url("/static/images/modal-background.png");
+                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                            display: inline-block;
+                            padding: 0;
+                            height: 80vh;
+                        } 
+                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                            height: 50vh;
+                            padding: 20px;
+                        }
 
                         img {
-                            width: 500px;
-                            height: 650px;
-                            object-fit: cover;
+                            width: 100%;
+                            @media screen and (min-width: 0px) and (max-width: 767px) {
+                                margin-top: 20px;
+                            }
+                            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                width: 250px;
+                                height: 400px;
+                                object-fit: cover;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                            } 
+                            @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                width: 350px;
+                                height: 500px;
+                                object-fit: cover;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                            }
+                            @media screen and (min-width: 1440px) {
+                                width: 500px;
+                                height: 650px;
+                                object-fit: cover;
+                                margin-bottom: auto;
+                            }
                         }
 
                         .description {
@@ -849,41 +907,158 @@ $go-venue-pc-width: 300px;
                             margin-left: 80px;
                             margin-top: auto;
                             margin-bottom: auto;
+                            @media screen and (min-width: 0px) and (max-width: 767px) {
+                                width: 90%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                            } 
+                            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    margin-left: 30px;
+                                    width: 60%;
+                            } 
+                            @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                margin-left: 30px;
+                                width: 60%;
+                            }
                             h1 {
                                 width: 100%;
                                 margin: 0;
                                 text-align: left;
                                 color: #ffffff;
+                                @media screen and (min-width: 0px) and (max-width: 767px) {
+                                    text-align: center;
+                                    font-size: 28px;
+                                }
+                                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    font-size: 40px;
+                                }
                             }
                             p {
-                                margin-top: 40px;
+                                margin-top: 20px;
                                 width: 90%;
                                 text-align: left;
                                 color: #ffffff;
                                 line-height: 40px;
+                                @media screen and (min-width: 0px) and (max-width: 767px) {
+                                    margin-top: 20px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                }
+                                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    margin-top: 10px;
+                                    width: 100%;
+                                    line-height: 30px;
+                                } 
+                                @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                    margin-top: 20px;
+                                    width: 100%;
+                                }
                             }
 
                             .modal-link {
-                                margin-top: 60px;
+                                margin-top: 40px;
                                 display: flex;
+                                @media screen and (min-width: 0px) and (max-width: 767px) {
+                                    margin-top: 20px;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-top: 10px;
+                                }
+                                @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                    margin-top: 20px;
+                                }
+                                @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                    margin-top: 20px;
+                                }
 
                                 .individual-button {
                                     width: 50%;
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                    @media screen and (min-width: 0px) and (max-width: 767px) {
+                                        width: 100%;
+                                        margin-bottom: 10px;
+                                    }
+                                    @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                        padding-left: 5px;
+                                        padding-right: 5px;
+                                    }
+                                    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                        width: 100%;
+                                        padding-left: 0px;
+                                    }
                                     p {
                                         margin-top: 0;
                                         margin-left: 0;
                                         margin-right: 0;
                                         margin-bottom: 10px;
+                                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                                            width: 90%;
+                                            text-align: left;
+                                            font-size: 12px;
+                                            margin-right: auto;
+                                            margin-left: auto;
+                                            margin-bottom: 5px;
+                                        }
+                                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                            font-size: 15px;
+                                        }
+                                        @media screen and (min-width: 1024px) and (max-width: 1439px) {
+                                            margin-bottom: 5px;
+                                        }
                                     }
                                     .modal-button-1 {
                                         border: solid;
                                         border-color: #FF0022;
-                                        width: 300px;
+                                        width: 100%;
                                         height: 70px;
                                         overflow: hidden;
+                                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                                            border: none;
+                                            width: 90%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 50px;
+                                            background-color: #ff0022;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 14px;
+                                                line-height: 50px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                            border: none;
+                                            width: 100%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 60px;
+                                            background-color: #ff0022;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 18px;
+                                                line-height: 60px;
+                                            }
+                                        }
 
                                        
-                                        @media screen and (min-width: 1100px) {
+                                        @media screen and (min-width: 1024px) {
                                             a {
                                                 display: block;
                                                 width: 100%;
@@ -929,12 +1104,51 @@ $go-venue-pc-width: 300px;
                                     .modal-button-2 {
                                         border: solid;
                                         border-color: #DDC925;
-                                        width: 300px;
+                                        width: 100%;
                                         height: 70px;
                                         overflow: hidden;
+                                        @media screen and (min-width: 0px) and (max-width: 767px) {
+                                            border: none;
+                                            width: 90%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 50px;
+                                            background-color: #DDC925;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 14px;
+                                                line-height: 50px;
+                                            }
+                                        }
+
+                                        @media screen and (min-width: 768px) and (max-width: 1023px) {
+                                            border: none;
+                                            width: 100%;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            height: 60px;
+                                            background-color: #DDC925;
+                                            a {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                font-weight: bold;
+                                                color: #ffffff;
+                                                font-size: 18px;
+                                                line-height: 60px;
+                                            }
+                                        }
 
                                        
-                                        @media screen and (min-width: 1100px) {
+                                        @media screen and (min-width: 1024px) {
                                             a {
                                                 display: block;
                                                 width: 100%;
@@ -1233,9 +1447,3 @@ $go-venue-pc-width: 300px;
 
     }
 }
-
-
-
-@media screen and (min-width: 0px) and (max-width: 767px) {} 
-@media screen and (min-width: 768px) and (max-width: 1023px) {} 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {} 
