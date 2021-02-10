@@ -821,11 +821,15 @@ $go-venue-pc-width: 300px;
                     position: relative;
                     display: inline-block;
                     vertical-align: middle;
-                    @media screen and (min-width: 1025px) {
+                    @media screen and (min-width: 1024px) and (max-width: 1849px) {
                         width: 80%;
+
                     }
                     @media screen and (min-width: 768px) and (max-width: 1023px) {
                         width: 95%;
+                    }
+                    @media screen and (min-width: 1850px) {
+                        max-width: 1500px;
                     }
 
                     .modal-close {
@@ -874,6 +878,9 @@ $go-venue-pc-width: 300px;
                         @media screen and (min-width: 768px) and (max-width: 1023px) {
                             height: 50vh;
                             padding: 20px;
+                        }
+                        @media screen and (min-width: 1850px) {
+                            padding: 60px;
                         }
 
                         img {

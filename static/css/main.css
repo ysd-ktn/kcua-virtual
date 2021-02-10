@@ -655,12 +655,15 @@ body {
           position: relative;
           display: inline-block;
           vertical-align: middle; }
-          @media screen and (min-width: 1025px) {
+          @media screen and (min-width: 1024px) and (max-width: 1849px) {
             .contents-section .base-square .contents-contents .modal-wrapper .modal-window {
               width: 80%; } }
           @media screen and (min-width: 768px) and (max-width: 1023px) {
             .contents-section .base-square .contents-contents .modal-wrapper .modal-window {
               width: 95%; } }
+          @media screen and (min-width: 1850px) {
+            .contents-section .base-square .contents-contents .modal-wrapper .modal-window {
+              max-width: 1500px; } }
           .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-close {
             z-index: 20;
             display: inline-block;
@@ -702,6 +705,9 @@ body {
               .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content {
                 height: 50vh;
                 padding: 20px; } }
+            @media screen and (min-width: 1850px) {
+              .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content {
+                padding: 60px; } }
             .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content img {
               width: 100%; }
               @media screen and (min-width: 0px) and (max-width: 767px) {
