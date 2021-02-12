@@ -1081,11 +1081,18 @@ body {
           font-size: 40px;
           font-weight: bold; }
         .event-section .base-square .event-contents .summary .contents-block p {
-          width: 70%;
+          line-height: 30px;
+          width: 75%;
           margin-top: 30px;
           margin-bottom: 30px;
           margin-left: auto;
           margin-right: auto; }
+          @media screen and (min-width: 768px) and (max-width: 934px) {
+            .event-section .base-square .event-contents .summary .contents-block p {
+              height: 290px; } }
+          @media screen and (min-width: 935px) and (max-width: 1099px) {
+            .event-section .base-square .event-contents .summary .contents-block p {
+              height: 240px; } }
         .event-section .base-square .event-contents .summary .contents-block .event-bottun {
           width: 70%;
           height: 85px;
