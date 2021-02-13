@@ -163,13 +163,17 @@ body {
 /* -------------------- Entry -------------------- */
 .entry-section {
   width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position-x: center; }
+  height: 80vh; }
+  @media screen and (min-width: 1200px) {
+    .entry-section {
+      height: 100vh; } }
   .entry-section .title-row {
     display: flex;
     align-items: center;
-    height: 80vh; }
+    height: 64vh; }
+    @media screen and (min-width: 1200px) {
+      .entry-section .title-row {
+        height: 80vh; } }
     @media screen and (min-width: 0px) and (max-width: 576px) {
       .entry-section .title-row .title {
         text-align: center; } }
@@ -210,14 +214,20 @@ body {
           margin-left: 40px;
           margin-right: 40px; } }
   .entry-section .bottom-row {
-    height: 20vh; }
+    height: 16vh; }
+    @media screen and (min-width: 1200px) {
+      .entry-section .bottom-row {
+        height: 20vh; } }
     .entry-section .bottom-row .go-venue-box {
       padding: 0px; }
       @media screen and (min-width: 0px) and (max-width: 576px) {
         .entry-section .bottom-row .go-venue-box {
           width: 100%;
-          height: 10vh; } }
-      @media screen and (min-width: 577px) {
+          height: 8vh; } }
+      @media screen and (min-width: 577px) and (max-width: 1199px) {
+        .entry-section .bottom-row .go-venue-box {
+          height: 16vh; } }
+      @media screen and (min-width: 1200px) {
         .entry-section .bottom-row .go-venue-box {
           height: 20vh; } }
       .entry-section .bottom-row .go-venue-box .go-venue {
@@ -242,9 +252,13 @@ body {
       @media screen and (min-width: 0px) and (max-width: 576px) {
         .entry-section .bottom-row .announcement-box {
           width: 100%;
-          height: 10vh;
+          height: 8vh;
           font-size: 12px; } }
-      @media screen and (min-width: 577px) {
+      @media screen and (min-width: 577px) and (max-width: 1199px) {
+        .entry-section .bottom-row .announcement-box {
+          font-size: 18px;
+          height: 16vh; } }
+      @media screen and (min-width: 1200px) {
         .entry-section .bottom-row .announcement-box {
           font-size: 18px;
           height: 20vh; } }
@@ -271,6 +285,7 @@ body {
 
 /* -------------------- movie -------------------- */
 .movie-section {
+  padding-top: 60px;
   text-align: center;
   width: 100%; }
   .movie-section video {
@@ -344,15 +359,15 @@ body {
             line-height: 35px; } }
         @media screen and (min-width: 768px) and (max-width: 972px) {
           .about-section .base-square .about-contents p {
-            font-size: 13px;
-            line-height: 25px;
+            font-size: 14px;
+            line-height: 30px;
             margin-left: 30px;
             width: 55%; } }
         @media screen and (min-width: 0px) and (max-width: 767px) {
           .about-section .base-square .about-contents p {
             width: 85%;
-            font-size: 13px;
-            line-height: 25px;
+            font-size: 14px;
+            line-height: 30px;
             margin-right: auto;
             margin-left: auto;
             margin-top: 40px;
@@ -1072,7 +1087,7 @@ body {
       margin-left: auto; }
       @media screen and (min-width: 0px) and (max-width: 767px) {
         .event-section .base-square .event-contents .summary {
-          display: block; } }
+          display: inline-block; } }
       .event-section .base-square .event-contents .summary .contents-block {
         width: 40%;
         padding-top: 40px;
@@ -1082,10 +1097,6 @@ body {
         background-color: rgba(255, 255, 255, 0.3);
         color: #ffffff;
         text-align: center; }
-        @media screen and (min-width: 768px) {
-          .event-section .base-square .event-contents .summary .contents-block {
-            margin-right: 10px;
-            margin-left: 10px; } }
         @media screen and (min-width: 1100px) and (max-width: 1500px) {
           .event-section .base-square .event-contents .summary .contents-block {
             width: 45%; } }
@@ -1180,7 +1191,7 @@ body {
                 line-height: 50px; } }
         @media screen and (min-width: 0px) and (max-width: 767px) {
           .event-section .base-square .event-contents .summary .contents-block {
-            width: 80%;
+            width: 95%;
             padding-top: 20px;
             padding-bottom: 20px;
             margin-bottom: 20px; }
@@ -1188,10 +1199,11 @@ body {
               font-size: 22px;
               margin-bottom: 10px; }
             .event-section .base-square .event-contents .summary .contents-block h4 {
-              font-size: 16px; }
+              font-size: 18px; }
             .event-section .base-square .event-contents .summary .contents-block p {
+              line-height: 30px;
               width: 90%;
-              font-size: 12px;
+              font-size: 14px;
               margin-top: 15px;
               margin-bottom: 15px;
               margin-left: auto;
