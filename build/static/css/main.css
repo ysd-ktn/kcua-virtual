@@ -1200,4 +1200,74 @@ body {
                 font-size: 16px;
                 line-height: 40px; } }
 
+/* -------------------- member -------------------- */
+.member-section {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  text-align: center;
+  color: #3c3c3e; }
+  .member-section h1 {
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: solid;
+    margin-bottom: 60px; }
+  .member-section h2 {
+    font-weight: bold; }
+  .member-section p {
+    margin-bottom: 0; }
+  .member-section a {
+    text-decoration: none;
+    color: #3c3c3e;
+    font-weight: bold; }
+    .member-section a:hover {
+      color: #707070; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .member-section {
+      padding-bottom: 60px; }
+      .member-section h1 {
+        font-size: 25px;
+        padding: 0; }
+      .member-section h2 {
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 30px; }
+      .member-section a {
+        font-size: 22px; }
+      .member-section .individual-member {
+        margin-top: 20px; } }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .member-section {
+      padding-bottom: 60px; }
+      .member-section h1 {
+        font-size: 35px;
+        padding: 0; }
+      .member-section h2 {
+        margin-top: 60px;
+        margin-bottom: 30px; }
+      .member-section a {
+        font-size: 22px; }
+      .member-section .individual-member {
+        margin-top: 20px; } }
+  @media screen and (min-width: 1200px) {
+    .member-section h2 {
+      margin-top: 60px;
+      margin-bottom: 40px; }
+    .member-section a {
+      font-size: 30px; }
+    .member-section .individual-member {
+      margin-left: 20px;
+      margin-right: 20px; }
+    .member-section .leader {
+      margin-bottom: 30px; }
+    .member-section .member {
+      display: flex;
+      justify-content: center; }
+    .member-section .sub-member {
+      display: flex;
+      justify-content: center; } }
+
 /*# sourceMappingURL=main.css.map */
