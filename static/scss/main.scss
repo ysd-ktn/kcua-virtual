@@ -1495,3 +1495,98 @@ $go-venue-pc-width: 300px;
 
     }
 }
+
+/* -------------------- member -------------------- */
+.member-section {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    text-align: center;
+    color: #3c3c3e;
+    h1 {
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: inline-block;
+        font-weight: bold;
+        border-bottom: solid;
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        color: #3c3c3e;
+        font-weight: bold;
+        &:hover {
+            color: #707070;
+        }
+    }
+
+    @media screen and (min-width: 0px) and (max-width: $md - 1px) {
+        padding-bottom: 60px;
+        h1 {
+            font-size: 25px;
+            padding: 0;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+        a {
+            font-size: 22px;
+        }
+        .individual-member {
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (min-width: $md) and (max-width: $xl - 1px) {
+        padding-bottom: 60px;
+        h1 {
+            font-size: 35px;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+        a {
+            font-size: 22px;
+        }
+        .individual-member {
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (min-width: $xl) {
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        a {
+            font-size: 30px;
+        }
+        .individual-member {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .leader {
+            margin-bottom: 30px;
+        }
+        .member {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .sub-member {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
