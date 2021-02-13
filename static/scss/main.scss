@@ -24,6 +24,20 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
+    &::before {
+        content:"";
+        display:block;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:100vh;
+        background-image: url("/static/images/entry_background.png");
+        background-repeat:no-repeat;
+        background-position:50% 100%;
+        background-size:cover;
+    }
 }
 
 h1 {
