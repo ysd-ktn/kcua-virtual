@@ -177,6 +177,14 @@ body {
     @media screen and (min-width: 0px) and (max-width: 576px) {
       .entry-section .title-row .title {
         text-align: center; } }
+    @media screen and (min-width: 769px) and (max-width: 1439px) {
+      .entry-section .title-row .title {
+        padding-top: 40px;
+        padding-left: 40px; } }
+    @media screen and (min-width: 1440px) {
+      .entry-section .title-row .title {
+        padding-top: 40px;
+        padding-left: 60px; } }
     @media screen and (min-width: 0px) and (max-width: 768px) {
       .entry-section .title-row .title .title-img {
         width: 100%;
@@ -200,6 +208,9 @@ body {
       margin-top: 30px;
       margin-left: 25px;
       margin-right: 25px; }
+      @media screen and (min-width: 450px) and (max-width: 768px) {
+        .entry-section .title-row .title .title-message {
+          font-size: 24px; } }
       @media screen and (min-width: 0px) and (max-width: 768px) {
         .entry-section .title-row .title .title-message {
           text-align: center;
@@ -207,10 +218,14 @@ body {
           margin-right: 20px; } }
       @media screen and (min-width: 769px) and (max-width: 1439px) {
         .entry-section .title-row .title .title-message {
-          font-size: 24px; } }
+          text-align: center;
+          width: 65%;
+          font-size: 28px; } }
       @media screen and (min-width: 1440px) {
         .entry-section .title-row .title .title-message {
-          font-size: 30px;
+          text-align: center;
+          width: 50%;
+          font-size: 36px;
           margin-left: 40px;
           margin-right: 40px; } }
   .entry-section .bottom-row {
@@ -243,10 +258,16 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center; }
+        .entry-section .bottom-row .go-venue-box .go-venue:hover {
+          background-color: #0074D6;
+          transition: 0.4s; }
         @media screen and (min-width: 0px) and (max-width: 992px) {
           .entry-section .bottom-row .go-venue-box .go-venue {
             height: 100%;
             font-size: 23px; } }
+        @media screen and (min-width: 1440px) {
+          .entry-section .bottom-row .go-venue-box .go-venue {
+            font-size: 40px; } }
     .entry-section .bottom-row .announcement-box {
       padding: 0px; }
       @media screen and (min-width: 0px) and (max-width: 576px) {
@@ -282,6 +303,12 @@ body {
         @media screen and (min-width: 577px) {
           .entry-section .bottom-row .announcement-box .announcement {
             height: 70%; } }
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+          .entry-section .bottom-row .announcement-box .announcement {
+            font-size: 24px; } }
+        @media screen and (min-width: 1201px) {
+          .entry-section .bottom-row .announcement-box .announcement {
+            font-size: 28px; } }
 
 /* -------------------- movie -------------------- */
 .movie-section {
