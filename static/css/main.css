@@ -126,7 +126,8 @@ body {
 .navbar {
   z-index: 10;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  font-weight: bold; }
   .navbar .navbar-nav .nav-item {
     font-size: 18px;
     margin-left: 30px; }
@@ -1294,6 +1295,7 @@ body {
   .member-section h2 {
     font-weight: bold; }
   .member-section p {
+    font-weight: bold;
     margin-bottom: 0; }
   .member-section a {
     text-decoration: none;
