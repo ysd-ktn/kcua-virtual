@@ -151,6 +151,7 @@ h5 {
     z-index: 10;
     position: fixed;
     width: 100%;
+    font-weight: bold;
     .navbar-nav{
         .nav-item{
             font-size: 18px;
@@ -365,7 +366,6 @@ $go-venue-pc-width: 300px;
                 position: absolute;
                 bottom:0px;
                 // text font
-                text-align: left;
                 font: bold Hiragino Sans;
                 font-weight: bold;
                 letter-spacing: 0px;
@@ -373,7 +373,7 @@ $go-venue-pc-width: 300px;
                 padding: 15px;
                 display: flex;
                 -webkit-align-items: center;
-                align-items: center;
+                justify-content: center; 
             }
         }
     }
@@ -384,19 +384,23 @@ $go-venue-pc-width: 300px;
     padding-top: 60px;
     text-align: center;
     width: 100%;
-    video{
+    iframe {
         margin-top: 80px;
         margin-bottom: 80px;
         width: 50%;
+        height: calc(50vw * 0.5625);
+
         @media screen and (min-width: 501px) and (max-width: 1200px) {
             margin-top: 60px;
             margin-bottom: 60px;
             width: 80%;
+            height: calc(80vw * 0.5625);
         }
         @media screen and (min-width: 0) and (max-width: 500px) {
             margin-top: 30px;
             margin-bottom: 30px;
-            width: 80%;
+            width: 90%;
+            height: calc(90vw * 0.5625);
         }
     }
 }
@@ -1600,6 +1604,7 @@ $go-venue-pc-width: 300px;
         font-weight: bold;
     }
     p {
+        font-weight: bold;
         margin-bottom: 0;
     }
     a {

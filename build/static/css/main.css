@@ -126,7 +126,8 @@ body {
 .navbar {
   z-index: 10;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  font-weight: bold; }
   .navbar .navbar-nav .nav-item {
     font-size: 18px;
     margin-left: 30px; }
@@ -289,14 +290,13 @@ body {
         width: 100%;
         position: absolute;
         bottom: 0px;
-        text-align: left;
         font: bold Hiragino Sans;
         font-weight: bold;
         letter-spacing: 0px;
         padding: 15px;
         display: flex;
         -webkit-align-items: center;
-        align-items: center; }
+        justify-content: center; }
         @media screen and (min-width: 0px) and (max-width: 576px) {
           .entry-section .bottom-row .announcement-box .announcement {
             height: 100%; } }
@@ -315,20 +315,23 @@ body {
   padding-top: 60px;
   text-align: center;
   width: 100%; }
-  .movie-section video {
+  .movie-section iframe {
     margin-top: 80px;
     margin-bottom: 80px;
-    width: 50%; }
+    width: 50%;
+    height: calc(50vw * 0.5625); }
     @media screen and (min-width: 501px) and (max-width: 1200px) {
-      .movie-section video {
+      .movie-section iframe {
         margin-top: 60px;
         margin-bottom: 60px;
-        width: 80%; } }
+        width: 80%;
+        height: calc(80vw * 0.5625); } }
     @media screen and (min-width: 0) and (max-width: 500px) {
-      .movie-section video {
+      .movie-section iframe {
         margin-top: 30px;
         margin-bottom: 30px;
-        width: 80%; } }
+        width: 90%;
+        height: calc(90vw * 0.5625); } }
 
 /* -------------------- about -------------------- */
 .about-section {
@@ -1294,6 +1297,7 @@ body {
   .member-section h2 {
     font-weight: bold; }
   .member-section p {
+    font-weight: bold;
     margin-bottom: 0; }
   .member-section a {
     text-decoration: none;
