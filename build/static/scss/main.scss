@@ -977,7 +977,7 @@ $go-venue-pc-width: 300px;
                         display: flex;
                         justify-content: center;
                         flex-direction: row;
-                        background-image: url("/static/images/modal-background.png");
+                        background-image: url("/static/images/modal-background.jpg");
                         @media screen and (min-width: 0px) and (max-width: 767px) {
                             display: inline-block;
                             padding: 0;
@@ -1705,6 +1705,11 @@ $go-venue-pc-width: 300px;
     
         .sns-icons {
             a {
+                display: inline-block;
+                height: 40px;
+                @media screen and (max-width: $sm) {
+                    height: 30px;
+                }
                 img {
                     width: 40px;
                     &:hover {

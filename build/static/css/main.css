@@ -793,7 +793,7 @@ body {
             display: flex;
             justify-content: center;
             flex-direction: row;
-            background-image: url("/static/images/modal-background.png"); }
+            background-image: url("/static/images/modal-background.jpg"); }
             @media screen and (min-width: 0px) and (max-width: 767px) {
               .contents-section .base-square .contents-contents .modal-wrapper .modal-window .modal-content {
                 display: inline-block;
@@ -1369,12 +1369,18 @@ body {
       @media screen and (max-width: 576px) {
         .background .footer-wrapper .credit p {
           font-size: 12px; } }
-    .background .footer-wrapper .sns-icons a img {
-      width: 40px; }
-      .background .footer-wrapper .sns-icons a img:hover {
-        opacity: 0.5; }
+    .background .footer-wrapper .sns-icons a {
+      display: inline-block;
+      height: 40px; }
       @media screen and (max-width: 576px) {
-        .background .footer-wrapper .sns-icons a img {
-          width: 30px; } }
+        .background .footer-wrapper .sns-icons a {
+          height: 30px; } }
+      .background .footer-wrapper .sns-icons a img {
+        width: 40px; }
+        .background .footer-wrapper .sns-icons a img:hover {
+          opacity: 0.5; }
+        @media screen and (max-width: 576px) {
+          .background .footer-wrapper .sns-icons a img {
+            width: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
