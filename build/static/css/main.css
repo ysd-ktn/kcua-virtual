@@ -372,7 +372,9 @@ body {
           display: inline-block;
           text-align: center; } }
       .about-section .base-square .about-contents .about-img {
-        width: 30%; }
+        width: 30%;
+        margin-top: auto;
+        margin-bottom: auto; }
         @media screen and (min-width: 0px) and (max-width: 269px) {
           .about-section .base-square .about-contents .about-img {
             width: 80%;
@@ -405,7 +407,10 @@ body {
             object-position: bottom; } }
         @media screen and (min-width: 768px) and (max-width: 972px) {
           .about-section .base-square .about-contents .about-img {
-            width: 45%; } }
+            width: 45%;
+            height: 400px;
+            object-fit: cover;
+            object-position: bottom; } }
       .about-section .base-square .about-contents p {
         width: 51%;
         color: #ffffff;

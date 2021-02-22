@@ -453,6 +453,8 @@ $go-venue-pc-width: 300px;
 
             .about-img {
                 width: 30%;
+                margin-top: auto;
+                margin-bottom: auto;
                 @media screen and (min-width: 0px) and (max-width: 269px) {
                     width: 80%; 
                     height: 130px;
@@ -490,6 +492,9 @@ $go-venue-pc-width: 300px;
 
                 @media screen and (min-width: 768px) and (max-width: 972px) {
                     width: 45%;
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: bottom;
                 }
             }
     
