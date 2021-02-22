@@ -453,9 +453,43 @@ $go-venue-pc-width: 300px;
 
             .about-img {
                 width: 30%;
+                @media screen and (min-width: 0px) and (max-width: 269px) {
+                    width: 80%; 
+                    height: 130px;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
 
-                @media screen and (min-width: 0px) and (max-width: 767px) {
-                    width: 60%;
+                @media screen and (min-width: 270px) and (max-width: 359px) {
+                    width: 80%; 
+                    height: 150px;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+
+                @media screen and (min-width: 360px) and (max-width: 459px) {
+                    width: 80%; 
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+
+                @media screen and (min-width: 460px) and (max-width: 529px) {
+                    width: 80%; 
+                    height: 250px;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+
+                @media screen and (min-width: 530px) and (max-width: 767px) {
+                    width: 80%;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 972px) {
+                    width: 45%;
                 }
             }
     
@@ -485,7 +519,7 @@ $go-venue-pc-width: 300px;
                     font-size: 14px;
                     line-height: 30px;
                     margin-left: 30px;
-                    width: 55%;
+                    width: 45%;
 
                 }
                 
