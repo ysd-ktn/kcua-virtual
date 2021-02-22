@@ -11,8 +11,7 @@ body {
   background-image: url("/static/images/entry_background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-position: right; }
+  background-size: cover; }
   body::before {
     content: "";
     display: block;
@@ -25,7 +24,8 @@ body {
     background-image: url("/static/images/entry_background.jpg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
   h1 {

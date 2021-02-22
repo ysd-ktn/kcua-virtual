@@ -23,7 +23,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: right;
     &::before {
         content:"";
         display:block;
@@ -37,6 +36,7 @@ body {
         background-repeat:no-repeat;
         background-position:50% 100%;
         background-size:cover;
+        background-position: right;
     }
 }
 
